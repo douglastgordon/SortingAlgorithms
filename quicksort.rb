@@ -19,5 +19,3 @@ def quicksort(arr)
 
   left.concat([pivot]).concat(right)
 end
-
-p quicksort([1,2,3,4,5,6,7,7,8,9])
