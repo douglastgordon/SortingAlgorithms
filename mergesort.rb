@@ -1,3 +1,11 @@
+def merge_sort(arr)
+  return arr if arr.length <= 1
+  mid = arr.length / 2
+  first = merge_sort(arr.slice(0, mid))
+  last = merge_sort(arr.slice(mid, arr.length - mid))
+  merge(first, last)
+end
+
 def merge(arr1, arr2)
   merged_array = []
   until arr1.empty? || arr2.empty?
@@ -9,7 +17,3 @@ def merge(arr1, arr2)
   end
   merged_array.concat(arr1).concat(arr2)
 end
-
-arr1 = [2,4,5,8]
-arr2 = [1,2,3,7,8]
-p merge(arr1,arr2)
