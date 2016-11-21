@@ -23,8 +23,3 @@ def cocktail_sort(arr)
   arr
 
 end
-
-
-arr = [1,5,3,23,65,23,652,23,1211,553,12,12,5,6,3,123,53]
-
-p cocktail_sort(arr)
