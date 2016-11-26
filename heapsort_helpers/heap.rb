@@ -19,7 +19,8 @@ class Heap
   end
 
   def remove_max
-    arr[@size-1], arr[0] = arr[0], arr[@size-1]
+    arr[-1], arr[0] = arr[0], arr[-1]
+    arr.pop
     @size -= 1
     ensure_heap(0)
   end
@@ -53,14 +54,19 @@ class Heap
   def ensure_heap(idx)
     return if leaf_node?(idx) || satisfies_heap_condition?(idx)
 
-    if left_child_value(idx) > right_child_value(idx)
-      arr[idx], arr[left_child(idx)] = arr[left_child(idx)], arr[idx]
-      ensure_heap(left_child(idx))
+    left_child_value = @arr[left_child(idx)]
+    right_child_value = @arr[right_child(idx)]
+
+    larger_child = nil
+    if left_child_value > right_child_value
+      larger_child = left_child(idx)
     else
-      arr[idx], arr[right_child(idx)] = arr[right_child(idx)], arr[idx]
-      ensure_heap(right_child(idx))
+      larger_child = right_child(idx)
     end
 
+    @arr[idx], @arr[larger_child] = @arr[idx], @arr[larger_child]
+
+    ensure_heap(larger_child)
   end
 
 end
