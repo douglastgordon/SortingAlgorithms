@@ -17,3 +17,5 @@ A 'pivot' element is picked from the middle of the array. The other elements in 
 Best: n log n
 Average: n log n
 Worst: n log n
+
+Merge sort divides an array into sorted arrays, and then uses a helper function which merges two adjacent sorted arrays. The initial run-through divides the array into one element long arrays - as these are known to be sorted. 
