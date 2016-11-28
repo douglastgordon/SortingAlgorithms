@@ -43,9 +43,15 @@ Best: n
 Average: n^2
 Worst: n^2
 
-Bubble sort iterates over an array, swapping adjacent pairs if they are out of order. Bubble sort is done when there are no swaps made in a pass over the array. 
+Bubble sort iterates over an array, swapping adjacent pairs if they are out of order. Bubble sort is done when there are no swaps made in a pass over the array.
 
 ###Cocktail sort  
+
+Best: n
+Average: n^2
+Worst: n^2
+
+Cocktail sort is an improvement on bubble sort: it iterates over the array forwards and backwards for every cycle. So, a small number at the end of the array will find its way to the beginning much faster.  
 
 ###Gnome sort
 
