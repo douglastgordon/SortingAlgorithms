@@ -4,6 +4,8 @@ A continually updated library of sorting algorithms written in Ruby.
 
 ##Comparison Sorts
 
+These sorts all involve comparing elements and swapping or not swapping them.
+
 ###Quicksort
 
 Best: n log n
@@ -63,6 +65,19 @@ Cocktail sort is an improvement on bubble sort: it iterates over the array forwa
 
 ###Comb sort
 
+Best: n
+Average: n^2
+Worst: n^2
+
+Comb sort is another improvement on bubble sort: instead of swapping adjacent elements, it swaps elements at a continually decreasing interval. This comb sort has a gap "shrink" factor of 1.3.
+
 ##Non-Comparison sorts
 
 ###Histogram sort
+
+Best: n
+Average: n
+Worst: n
+
+Histogram sort works by iterating over the array and making a count array of the values, then iterating over the count array and placing each index the value at that index times in the output array.
+Histogram sort is very fast but has a number of caveats: it can't handle negative numbers, it can't handle floating point numbers and its space complexity is the size of its largest element (e.g. if your array has the value 1,000,000 in it, the space complexity will be 1,000,000 - which isn't going to work).
