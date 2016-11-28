@@ -27,4 +27,12 @@ Best: n
 Average: n^2
 Worst: n^2
 
-Insertion sort forms a sorted array from left to right. One by one, insertion sort takes the next element to the right and shifts it leftward until it is larger than the element next to it.
+Insertion sort forms a sorted array from left to right. One by one, insertion sort repeatedly takes the next element to the right and shifts it leftward until it is larger than the element next to it.
+
+###Selection sort
+
+Best: n^2
+Average: n^2
+Worst: n^2
+
+Selection sort, like insertion sort, builds the sorted array from left to right. Selection sort repeatedly selects the smallest element from the unsorted elements and swaps it with the first unsorted element.
