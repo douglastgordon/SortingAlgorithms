@@ -27,7 +27,15 @@ Best: n
 Average: n^2
 Worst: n^2
 
-Insertion sort forms a sorted array from left to right. One by one, insertion sort repeatedly takes the next element to the right and shifts it leftward until it is larger than the element next to it.
+Insertion sort forms a sorted array from left to right. One by one, insertion sort repeatedly takes the next element to the right and inserts it into its correct position among the sorted elements.
+
+###Gnome sort
+
+Best: n
+Average: n^2
+Worst: n^2
+
+Gnome is like insertion sort. Except, gnome sort repeatedly takes the next element to the right and shifts it leftward until it is larger than the element next to it.
 
 ###Selection sort
 
@@ -52,8 +60,6 @@ Average: n^2
 Worst: n^2
 
 Cocktail sort is an improvement on bubble sort: it iterates over the array forwards and backwards for every cycle. So, a small number at the end of the array will find its way to the beginning much faster.  
-
-###Gnome sort
 
 ###Comb sort
 
