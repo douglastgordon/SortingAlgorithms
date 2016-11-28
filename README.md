@@ -1,6 +1,6 @@
 #Sorting Algorithms
 
-Various sorting algorithms written in Ruby.
+A continually updated library of sorting algorithms written in Ruby.
 
 ##Comparison Sorts
 
@@ -36,3 +36,15 @@ Average: n^2
 Worst: n^2
 
 Selection sort, like insertion sort, builds the sorted array from left to right. Selection sort repeatedly selects the smallest element from the unsorted elements and swaps it with the first unsorted element.
+
+###Bubble sort  
+
+###Cocktail sort  
+
+###Gnome sort
+
+###Comb sort
+
+##Non-Comparison sorts
+
+###Histogram sort
