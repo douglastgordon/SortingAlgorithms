@@ -37,7 +37,13 @@ Worst: n^2
 
 Selection sort, like insertion sort, builds the sorted array from left to right. Selection sort repeatedly selects the smallest element from the unsorted elements and swaps it with the first unsorted element.
 
-###Bubble sort  
+###Bubble sort
+
+Best: n
+Average: n^2
+Worst: n^2
+
+Bubble sort iterates over an array, swapping adjacent pairs if they are out of order. Bubble sort is done when there are no swaps made in a pass over the array. 
 
 ###Cocktail sort  
 
