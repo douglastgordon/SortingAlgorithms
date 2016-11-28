@@ -18,4 +18,13 @@ Best: n log n
 Average: n log n
 Worst: n log n
 
-Merge sort divides an array into sorted arrays, and then uses a helper function which merges two adjacent sorted arrays. The initial run-through divides the array into one element long arrays - as these are known to be sorted. 
+Merge sort divides an array into sorted arrays, and then uses a helper function which merges two adjacent sorted arrays. The initial run-through divides the array into one element long arrays - as these are known to be sorted.  
+
+
+###Insertion sort
+
+Best: n
+Average: n^2
+Worst: n^2
+
+Insertion sort forms a sorted array from left to right. One by one, insertion sort takes the next element to the right and shifts it leftward until it is larger than the element next to it.
